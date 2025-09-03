@@ -20,11 +20,11 @@ export default function Home() {
         {/*  */}
         <div className="mt-[6rem]"><Services /></div>
         {/*  */}
-        <div><Skills /></div>
+        <div className="mt-[6rem]"><Skills /></div>
         {/*  */}  
-        <div><Project /></div>
+        <div className="mt-[6rem]"><Project /></div>
         {/*  */}
-        <div><Contactus /></div>
+        <div className="mt-[6rem]"><Contactus /></div>
       </main>
     </div>
   )
