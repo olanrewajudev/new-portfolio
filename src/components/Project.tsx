@@ -14,7 +14,7 @@ export default function Project() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-yellow">
             {portfolio.map((item, i) => (
               <div className=" rounded-3xl bg-white/25 backdrop-blur-3xl p-4" key={i}>
-                <div className=""><img src={item.image} alt="" className="w-[10rem]" /></div>
+                <div className=""><img src={item.image} alt="" className="w-" /></div>
                 <div className="flex items-center justify-between mb-3">
                   <div className="text-[1.4rem] font-semibold">{item.title}</div>
                   <div className="flex bg-white/25 backdrop-blur-3xl text-primary text-3xl gap-3 px-2 py-1 rounded-full">
