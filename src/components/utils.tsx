@@ -61,59 +61,59 @@ export const services = [
 export const portfolio = [
   {
     image: booking,
-    title: 'JoCasual Web Store',
+    title: 'F.A Finesse Oasis',
     content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ad modi ipsum praesentium quos deleniti aperiam maiores veritatis magnam eius?',
     github: 'https://github.com/olanrewajudev/jofront',
-    url: 'https://jocasual.netlify.app/',
+    url: 'https://finesseoasis.com.ng',
   },
   {
     image: direct,
-    title: 'JoCasual Web Store',
+    title: 'Quick Direct',
     content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ad modi ipsum praesentium quos deleniti aperiam maiores veritatis magnam eius?',
     github: 'https://github.com/olanrewajudev/jofront',
-    url: 'https://jocasual.netlify.app/',
+    url: 'https://quickdirect.netlify.app/',
   },
   {
     image: ecm,
-    title: 'JoCasual Web Store',
+    title: 'Fastest E-commerce',
     content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ad modi ipsum praesentium quos deleniti aperiam maiores veritatis magnam eius?',
     github: 'https://github.com/olanrewajudev/jofront',
     url: 'https://jocasual.netlify.app/',
   },
   {
     image: invest,
-    title: 'JoCasual Web Store',
+    title: 'CryptoCoin',
     content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ad modi ipsum praesentium quos deleniti aperiam maiores veritatis magnam eius?',
     github: 'https://github.com/olanrewajudev/jofront',
     url: 'https://jocasual.netlify.app/',
   },
   {
     image: invest2,
-    title: 'JoCasual Web Store',
+    title: 'Cryptville',
     content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ad modi ipsum praesentium quos deleniti aperiam maiores veritatis magnam eius?',
     github: 'https://github.com/olanrewajudev/jofront',
     url: 'https://jocasual.netlify.app/',
   },
   {
     image: shop,
-    title: 'JoCasual Web Store',
+    title: 'Jo Casual Shop',
     content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ad modi ipsum praesentium quos deleniti aperiam maiores veritatis magnam eius?',
     github: 'https://github.com/olanrewajudev/jofront',
     url: 'https://jocasual.netlify.app/',
   },
   {
     image: spare,
-    title: 'JoCasual Web Store',
+    title: 'Nspare',
     content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ad modi ipsum praesentium quos deleniti aperiam maiores veritatis magnam eius?',
     github: 'https://github.com/olanrewajudev/jofront',
-    url: 'https://jocasual.netlify.app/',
+    url: 'https://nspare.netlify.app/',
   },
   {
     image: taskcolony,
-    title: 'JoCasual Web Store',
+    title: 'Taskcolony',
     content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ad modi ipsum praesentium quos deleniti aperiam maiores veritatis magnam eius?',
     github: 'https://github.com/olanrewajudev/jofront',
-    url: 'https://jocasual.netlify.app/',
+    url: 'https://taskcolonystaging.netlify.app/',
   },
   // {
   //   image: taskcolony,
@@ -126,7 +126,6 @@ export const portfolio = [
 ]
 
 export const skills = [
-
   { name: 'HTML5', level: 90, img: html },
   { name: 'CSS3', level: 90, img: css },
   { name: 'Javascript', level: 90, img: javascript },
