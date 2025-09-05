@@ -10,7 +10,7 @@ export default function Aboutus() {
         <section id="about-us">
             <div className="border lg:flex items-center p-5 gap-10 rounded-xl">
                 <div className="w-full">
-                    <img src={me} alt="" className="w-[28rem] lg:h-[32rem] rounded-2xl object-top object-cover" />
+                    <img src={me} alt="" className="w-[28rem] md:w-full lg:h-[32rem] rounded-2xl object-top object-cover" />
 
                 </div>
                 <div className="text-yellow">

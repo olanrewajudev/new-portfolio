@@ -54,7 +54,7 @@ export const services = [
   {
     icon: <CiMobile2 />,
     title: 'Application Design',
-    content: 'We create intuitive, visually appealing app interfaces that enhance usability, boost engagement, and bring your digital product ideas to life on mobile and desktop.'
+    content: 'We create sleek, intuitive interfaces that merge functionality with beauty. By enhancing usability and fostering deeper engagement, we turn your digital product ideas into captivating mobile and desktop experiences.'
   }
 ]
 
