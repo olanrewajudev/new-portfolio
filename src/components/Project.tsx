@@ -1,4 +1,3 @@
-import { FiGithub } from "react-icons/fi";
 import { BsGlobe2 } from "react-icons/bs";
 import { portfolio } from "./utils";
 
@@ -17,8 +16,8 @@ export default function Project() {
                 <div className=""><img src={item.image} alt="" className="w-" /></div>
                 <div className="flex items-center justify-between mb-3 mt-4">
                   <div className="text-[1.4rem] font-semibold">{item.title}</div>
-                  <div className="flex bg-white/25 backdrop-blur-3xl text-primary text-3xl gap-3 px-2 py-1 rounded-full">
-                    <a href={item.github} target="_blank" rel="noopener noreferrer" className=""><FiGithub /></a>
+                  <div className="flex bg-white/25 backdrop-blur-3xl text-primary text-3xl gap-3 p-1 rounded-full">
+                    {/* <a href={item.github} target="_blank" rel="noopener noreferrer" className=""><FiGithub /></a> */}
                     <a href={item.url} target="_blank" rel="noopener noreferrer" className=""><BsGlobe2 /></a>
                   </div>
                 </div>

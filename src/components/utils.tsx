@@ -78,22 +78,16 @@ export const portfolio = [
     title: 'Fastest E-commerce',
     content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ad modi ipsum praesentium quos deleniti aperiam maiores veritatis magnam eius?',
     github: 'https://github.com/olanrewajudev/jofront',
-    url: 'https://jocasual.netlify.app/',
+    // url: 'https://jocasual.netlify.app/',
   },
   {
     image: invest,
     title: 'CryptoCoin',
     content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ad modi ipsum praesentium quos deleniti aperiam maiores veritatis magnam eius?',
     github: 'https://github.com/olanrewajudev/jofront',
-    url: 'https://jocasual.netlify.app/',
+    url: 'https://coincryp.netlify.app/',
   },
-  {
-    image: invest2,
-    title: 'Cryptville',
-    content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ad modi ipsum praesentium quos deleniti aperiam maiores veritatis magnam eius?',
-    github: 'https://github.com/olanrewajudev/jofront',
-    url: 'https://jocasual.netlify.app/',
-  },
+
   {
     image: shop,
     title: 'Jo Casual Shop',
