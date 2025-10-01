@@ -150,3 +150,12 @@ export const skills = [
   { name: 'Flutter', level: 90, img: flutter },
 
 ]
+
+export const NavbarLink = [
+    { id: 1, href: "/", name: 'HOME' },
+    { id: 2, href: "/Shopmen", name: 'SHOP MEN' },
+    { id: 3, href: "/Shopwomen", name: 'SHOP WOMEN' },
+    { id: 4, href: "/Newarrival", name: 'NEW ARRIVAL' },
+    { id: 5, href: "/Newarrival", name: 'FOOT WEARS' },
+    { id: 6, href: "/Newarrival", name: 'WRIST WATCH' },
+]

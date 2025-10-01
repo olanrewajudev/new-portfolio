@@ -24,7 +24,9 @@ body {
 html {
   scroll-behavior: smooth;
 }
-
+.scrollsdown::-webkit-scrollbar {
+  height: 0px;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
