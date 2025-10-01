@@ -5,7 +5,6 @@ import booking from '../assets/booking.png';
 import direct from '../assets/direct.png';
 import ecm from '../assets/ecm.png';
 import invest from '../assets/invest.png';
-import invest2 from '../assets/invest2.png';
 import shop from '../assets/shop.png';
 import spare from '../assets/spare.png';
 import taskcolony from '../assets/taskcolony.png';
