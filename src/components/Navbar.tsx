@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { SlMenu } from "react-icons/sl"
-import Sidebar from "./sidebar"
+import Sidebar from "./Sidebar"
 
 const navItem = [
     { name: "Home", href: '#home', id: '' },
