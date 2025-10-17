@@ -151,10 +151,10 @@ export const skills = [
 ]
 
 export const NavbarLink = [
-    { id: 1, href: "/", name: 'HOME' },
-    { id: 2, href: "/Shopmen", name: 'SHOP MEN' },
-    { id: 3, href: "/Shopwomen", name: 'SHOP WOMEN' },
-    { id: 4, href: "/Newarrival", name: 'NEW ARRIVAL' },
-    { id: 5, href: "/Newarrival", name: 'FOOT WEARS' },
-    { id: 6, href: "/Newarrival", name: 'WRIST WATCH' },
+    { id: 1, href: "#", name: 'Home' },
+    { id: 2, href: "#about-us", name: 'About Us' },
+    { id: 3, href: "#services", name: 'Services' },
+    { id: 4, href: "#skills", name: 'Skills' },
+    { id: 5, href: "#projects", name: 'Projects' },
+    { id: 6, href: "#contact-us", name: 'Contact Us' },
 ]

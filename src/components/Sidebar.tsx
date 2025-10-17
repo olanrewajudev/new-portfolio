@@ -30,37 +30,44 @@ export default function Sidebar({ closeView }: { closeView: () => void }) {
         };
     }, [isVisible]);
 
+    const onNavClick = (href: string, e?: React.MouseEvent) => {
+        if (e) e.preventDefault()
+
+        const scrollWithOffset = (el: HTMLElement, offsetPx = 80) => {
+            const top = el.getBoundingClientRect().top + window.pageYOffset - offsetPx
+            window.scrollTo({ top, behavior: 'smooth' })
+        }
+
+        const hashIndex = href.indexOf('#')
+        if (hashIndex !== -1) {
+            const id = href.slice(hashIndex + 1)
+            if (id === '' || id === '/') {
+                // Home / top of page
+                window.scrollTo({ top: 0, behavior: 'smooth' })
+                handleClose()
+                return
+            }
+            const el = document.getElementById(id)
+            if (el) {
+                // adjust offsetPx to add padding/top space (e.g., header height)
+                scrollWithOffset(el, 80)
+            }
+            handleClose()
+            return
+        }
+        // non-hash links: allow router navigation and close sidebar
+        handleClose()
+    }
+
     return (
         <div>
             <AnimatePresence>
                 {isVisible && (
                     <>
                         <motion.div initial={{ x: '-70%' }} animate={{ x: 0 }} exit={{ x: '-200%' }} transition={{ duration: 0.5 }} className="bg-white/25 backdrop-blur-xl  fixed top-0 z-[99] left-0 w-[80%] sm:w-[60%] scrollsdown h-full overflow-y-auto">
-                            <div className="mx-5 my-3 overflow-auto text-yellow flex items-end justify-end"><div className="flex items-center z-50 py-2 justify-between"><div className="text-3xl text-primary"><FaTimes className="cursor-pointer" onClick={handleClose} /></div></div></div>
-                            <div className="mx-5 my-5">{NavbarLink.map((item) => (<div className="pb-3" key={item.id}><div className="w-full bg-white/15 backdrop-blur-xl py-5 "><Link to={item.href} className="font-bold px-5 flex items-center justify-between text-primary">{item.name}</Link></div></div>))}</div>
-                             <div>
-                                
-                                    <div className="text-primary mx-4">
-                                      <div className="lg:col-span-1 bg-white/25 backdrop-blur-3xl p-10 rounded-2xl mb-3">
-                                        <div className="mb-3">
-                                          <div className=""><HiOutlineLocationMarker size={36} /></div>
-                                          <div className="py-2 font-bold">Our Office:</div>
-                                          <div className="">Chevron, Lagos Nigeria</div>
-                                        </div>
-                                        <div className="mb-3">
-                                          <div className=""><BiPhoneCall size={36} /></div>
-                                          <div className="py-2 font-bold">Contact Number:</div>
-                                          <div className="">+234 707 331 1736</div>
-                                        </div>
-                                        <div className="">
-                                          <div className=""><AiOutlineMail size={36} /></div>
-                                          <div className="py-2 font-bold">Email Us:</div>
-                                          <div className="">atolagbealameen4@gmail.com</div>
-                                        </div>
-                                      </div>
-                                     
-                                    </div>
-                                  </div>
+                            <div className="mx-5 my-3 overflow-auto text-yellow flex items-end justify-end"><div className="flex items-center z-50 py-2 justify-between"><div className="text-3xl text-primary"><FaTimes className="cursor-pointer  text-yellow" onClick={handleClose} /></div></div></div>
+                            <div className="mx-5 my-5 uppercase">{NavbarLink.map((item) => (<div className="pb-3" key={item.id}><div className="w-full bg-white/1 backdrop-blur-xl py-5 ">
+                                {item.href.includes('#') ? (<a href={item.href} onClick={(e) => onNavClick(item.href, e)} className="font-bold px-5 flex items-center justify-between text-yellow">{item.name}</a>) : (<Link to={item.href} onClick={() => onNavClick(item.href)} className="font-bold px-5 flex items-center justify-between text-yellow">{item.name}</Link>)}</div></div>))}</div>
                         </motion.div>
                         <div className="fixed inset-0 bg bg-opacity-50 z-[98]" onClick={handleClose}></div>
                     </>
